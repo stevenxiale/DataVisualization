@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/SecuritiesCloud/!svn/ver/102/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model
+END
+StockData.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/SecuritiesCloud/!svn/ver/95/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/StockData.java
+END
+CorrelationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/SecuritiesCloud/!svn/ver/107/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/CorrelationResult.java
+END
+Data.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/SecuritiesCloud/!svn/ver/95/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/Data.java
+END
+IndicatorData.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/SecuritiesCloud/!svn/ver/102/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/IndicatorData.java
+END
+Data3.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/SecuritiesCloud/!svn/ver/95/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/Data3.java
+END
+BoardStockQuotes.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/SecuritiesCloud/!svn/ver/95/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/BoardStockQuotes.java
+END
+CorrelationItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/SecuritiesCloud/!svn/ver/107/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/CorrelationItem.java
+END
+DayQuotes.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/SecuritiesCloud/!svn/ver/95/trunk/05-%E6%BA%90%E7%A0%81/DataVisualization/SecuritiesDataVisualization/src/cn/sec/ac/datavisualization/model/DayQuotes.java
+END

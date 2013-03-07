@@ -1,0 +1,30 @@
+package cn.sec.ac.datavisualization.model;
+
+import java.util.List;
+
+public class IndicatorData<T> {
+	private String key;
+	private Boolean bar;
+	private List<T> values;
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
+	public Boolean getBar() {
+		return bar;
+	}
+	public void setBar(Boolean bar) {
+		this.bar = bar;
+	}
+	public List<T> getValues() {
+		return values;
+	}
+	public void setValues(List<T> values) {
+		this.values = values;
+	}
+
+
+
+}

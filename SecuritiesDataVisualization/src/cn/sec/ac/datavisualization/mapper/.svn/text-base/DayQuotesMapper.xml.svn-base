@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sec.ac.datavisualization.mapper.DayQuotesMapper">
+    <select id="findCloseByDate" parameterType="DayQuotes" resultType="Data">
+        <![CDATA[
+        SELECT datetime as time,close as value FROM DAY_QUOTES
+        WHERE stockcode = #{stockcode}
+        AND TO_CHAR(datetime, 'yyyy/mm/dd') >= #{begindate}
+        AND TO_CHAR(datetime,'yyyy/mm/dd') <=#{enddate}
+        order by datetime
+        ]]>
+    </select>
+    <select id="findVolumeByDate" parameterType="DayQuotes" resultType="Data">
+        <![CDATA[
+        SELECT datetime as time,volume as value FROM DAY_QUOTES
+        WHERE stockcode = #{stockcode}
+        AND TO_CHAR(datetime, 'yyyy/mm/dd') >= #{begindate}
+        AND TO_CHAR(datetime,'yyyy/mm/dd') <=#{enddate}
+        order by datetime
+        ]]>
+    </select>
+    <select id="findOpenByDate" parameterType="DayQuotes" resultType="Data">
+        <![CDATA[
+        SELECT datetime as time,open as value FROM DAY_QUOTES
+        WHERE stockcode = #{stockcode}
+        AND TO_CHAR(datetime, 'yyyy/mm/dd') >= #{begindate}
+        AND TO_CHAR(datetime,'yyyy/mm/dd') <=#{enddate}
+        order by datetime
+        ]]>
+    </select>
+    <select id="findLCloseByDate" parameterType="DayQuotes" resultType="Data">
+        <![CDATA[
+        SELECT datetime as time,lclose as value FROM DAY_QUOTES
+        WHERE stockcode = #{stockcode}
+        AND TO_CHAR(datetime, 'yyyy/mm/dd') >= #{begindate}
+        AND TO_CHAR(datetime,'yyyy/mm/dd') <=#{enddate}
+        order by datetime
+        ]]>
+    </select>
+    <select id="findStockByDate" parameterType="BoardStockQuotes" resultType="Data3">
+        <![CDATA[
+        SELECT stockcode as stockcode,close as valuef,volume as valuese, chg_pct as valuet FROM DAY_QUOTES
+        WHERE TO_CHAR(datetime, 'yyyy/mm/dd') = '2012/02/10'
+        AND stockcode in (select stockcode from MARKET_STOCK)
+        ]]>
+    </select>
+     <select id="findBoardGuarByName" parameterType="BoardStockQuotes" resultType="Data3">
+        <![CDATA[
+        SELECT SHENWAN_INDUSTRY as stockcode,SUMOFAMOUNT as valuef,YEARAMOUNT as valuese, GYEAR as valuet FROM MEE_GUARANTEES_STATISTICS
+        WHERE SHENWAN_INDUSTRY = #{boardcode}
+        ]]>
+    </select>
+
+    <select id="findBoardFinaByDate" parameterType="BoardStockQuotes" resultType="Data3">
+        <![CDATA[
+        SELECT short_name as stockcode,current_lssue_income as valuef,current_lssue_net_income as valuese, current_lssue_assets as valuet FROM FI_BOARD_STOCK_NONULL
+        WHERE REPORT_DATE = #{date}
+        AND SFC_INDUSTRY = #{boardcode}
+        ]]>
+    </select>
+
+
+
+
+</mapper>

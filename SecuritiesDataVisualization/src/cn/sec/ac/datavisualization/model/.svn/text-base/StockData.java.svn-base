@@ -1,0 +1,24 @@
+package cn.sec.ac.datavisualization.model;
+
+import java.util.List;
+
+public class StockData<T> {
+	private String code;
+	private List<T> values;
+
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public List<T> getValues() {
+		return values;
+	}
+	public void setValues(List<T> values) {
+		this.values = values;
+	}
+
+
+
+}
